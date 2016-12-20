@@ -13,6 +13,7 @@
     "babel-loader": "^6.2.10",
     "babel-preset-env": "^1.1.4",
     "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^2.0.0-beta.4",
     "style-loader": "^0.13.1",
     "webpack": "^2.2.0-rc.0"
   }
