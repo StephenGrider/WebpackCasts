@@ -7,6 +7,20 @@ import ArtistDetail from './components/artists/ArtistDetail';
 import ArtistCreate from './components/artists/ArtistCreate';
 import ArtistEdit from './components/artists/ArtistEdit';
 
+const componentRoutes = {
+  component: Home,
+  path: '/',
+  indexRoute: { component: ArtistMain },
+  childRoutes: [
+    {
+      path: 'artists/new'
+      getComponent(location, cb) {
+        
+      }
+    }
+  ]
+};
+
 const Routes = () => {
   return (
     <Router history={hashHistory}>
