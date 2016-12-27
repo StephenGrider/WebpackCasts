@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack"
+    "clean": "rimraf dist",
+    "build": "npm run clean && webpack"
   },
   "repository": "https://github.com/StephenGrider/WebpackProject",
   "author": "",
@@ -28,6 +29,7 @@
     "babel-preset-react": "^6.16.0",
     "css-loader": "^0.26.1",
     "html-webpack-plugin": "^2.24.1",
+    "rimraf": "^2.5.4",
     "style-loader": "^0.13.1",
     "webpack": "^2.2.0-rc.0"
   }
