@@ -1,5 +1,6 @@
 var webpack = require('webpack');
 var path = require('path');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const VENDOR_LIBS = [
   'react', 'lodash', 'redux', 'react-redux', 'react-dom',
@@ -31,6 +32,9 @@ module.exports = {
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor'
+    }),
+    new HtmlWebpackPlugin({
+      template: 'src/index.html'
     })
   ]
 };
