@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf dist",
-    "build": "NODE_ENV=production npm run clean && webpack -p",
+    "build": "npm run clean && cross-env NODE_ENV=production webpack -p",
     "serve": "webpack-dev-server"
   },
   "repository": "https://github.com/StephenGrider/WebpackProject",
@@ -29,6 +29,7 @@
     "babel-loader": "^6.2.0",
     "babel-preset-env": "^1.1.4",
     "babel-preset-react": "^6.16.0",
+    "cross-env": "^5.0.0",
     "css-loader": "^0.26.1",
     "html-webpack-plugin": "^2.24.1",
     "rimraf": "^2.5.4",
